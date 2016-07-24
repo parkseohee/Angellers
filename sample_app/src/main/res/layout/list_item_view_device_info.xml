@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="top"
+              android:orientation="vertical"
+              android:paddingBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/photo"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:hint="input yourname"/>
+
+</LinearLayout>
+
+<GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:useDefaultMargins="true">
+
+        <TextView
+            style="@style/GridLayoutTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_name"/>
+
+        <TextView
+            android:id="@+id/deviceName"
+            style="@style/GridLayoutDataTextView"/>
+
+        <TextView
+            style="@style/GridLayoutTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_address"/>
+
+        <TextView
+            android:id="@+id/deviceAddress"
+            style="@style/GridLayoutDataTextView"/>
+
+        <TextView
+            style="@style/GridLayoutTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_class"/>
+
+        <TextView
+            android:id="@+id/deviceClass"
+            style="@style/GridLayoutDataTextView"/>
+
+        <TextView
+            style="@style/GridLayoutTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_major_class"/>
+
+        <TextView
+            android:id="@+id/deviceMajorClass"
+            style="@style/GridLayoutDataTextView"/>
+
+        <TextView
+            style="@style/GridLayoutTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_device_services"/>
+
+        <TextView
+            android:id="@+id/deviceServiceList"
+            style="@style/GridLayoutDataTextView"/>
+
+        <TextView
+            style="@style/GridLayoutTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_bonding_state"/>
+
+        <TextView
+            android:id="@+id/deviceBondingState"
+            style="@style/GridLayoutDataTextView"/>
+    </GridLayout>
+
+</LinearLayout>
